@@ -6,6 +6,8 @@ A responsive bakery storefront built with plain HTML, CSS, and JavaScript. Open 
 
 The site is deployed publicly through GitHub Pages. The current GitHub Pages URL is `https://oriolaolatok-bit.github.io/ohris-bitez/`.
 
+Three bread-card photos in `assets/` correspond to the sardine, milk, and banana bread reference pins supplied for the site. The owner confirmed permission to publish them.
+
 `ohrisbitez.com` was checked against the Verisign `.com` RDAP endpoint on 2026-10-03, which returned HTTP 404 (no registration record found). It has not been registered or configured. Register the domain with a registrar first; once registered, configure:
 
 - Apex `A` records (`@`) to GitHub Pages' shared addresses: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`.
