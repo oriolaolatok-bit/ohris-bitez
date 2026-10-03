@@ -15,8 +15,8 @@ This workspace is not connected to a Git repository and GitHub CLI is not authen
 ## Before accepting real orders
 
 - The eight bread listings, descriptions, and prices are examples. Confirm the products, ingredients, allergens, availability, and prices with the bakery.
-- Add the verified business email, phone, physical address, opening hours, and social links in the visit section.
-- The basket and checkout preview are not connected to order processing or payment. Connect a secure order backend, payment provider, fulfillment details, and order confirmation before accepting real orders.
+- Add the verified business email, physical address, opening hours, and social links in the visit section. The supplied phone contact is linked as a tap-to-call number; confirm its country code and formatting before launch.
+- The basket and checkout preview are not connected to order processing or payment. Connect a secure order backend, payment provider, fulfillment details, and order confirmation before accepting real orders. Do not put a personal bank/mobile-money account number or account-holder details in the public repository or site files; configure payment through a provider's secure checkout instead.
 - Suggested domain: `ohrisbitez.com`; availability and trademark status have not been checked. Register the desired domain, configure its DNS with the domain registrar/host, then add the verified canonical URL and custom-domain configuration.
 - A public server IP is assigned by the hosting provider. `203.0.113.42` is reserved for documentation and is not a live address.
 - Review the privacy, accessibility, consumer terms, tax, shipping, and food-allergen requirements that apply to the bakery's location.
