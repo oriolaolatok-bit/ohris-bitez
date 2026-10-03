@@ -2,23 +2,21 @@
 
 A responsive bakery storefront built with plain HTML, CSS, and JavaScript. Open `index.html` in a browser to preview it.
 
-## Publish with GitHub Pages
+## Hosting and custom domain
 
-The workflow in `.github/workflows/pages.yml` publishes the site when code is pushed to the `main` branch. After pushing this project to a GitHub repository:
+The site is deployed publicly through GitHub Pages. The current GitHub Pages URL is `https://oriolaolatok-bit.github.io/ohris-bitez/`.
 
-1. In the repository, open **Settings → Pages** and choose **GitHub Actions** as the build and deployment source if it is not already selected.
-2. Open the **Actions** tab and wait for **Deploy Ohris Bitez to GitHub Pages** to complete.
-3. GitHub Pages will show the live URL in the workflow's `github-pages` deployment environment. It will be based on the GitHub account and repository name, for example `https://<github-user>.github.io/ohris-bitez/`.
+`ohrisbitez.com` was checked against the Verisign `.com` RDAP endpoint on 2026-10-03, which returned HTTP 404 (no registration record found). It has not been registered or configured. Register the domain with a registrar first; once registered, configure:
 
-This workspace is not connected to a Git repository and GitHub CLI is not authenticated, so publishing still requires an authorized GitHub account and a repository.
+- Apex `A` records (`@`) to GitHub Pages' shared addresses: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`.
+- Optional apex `AAAA` records to GitHub Pages' shared IPv6 addresses: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, and `2606:50c0:8003::153`.
+- `www` `CNAME` to `oriolaolatok-bit.github.io`.
 
-## Before accepting real orders
+These are GitHub Pages' shared anycast frontend addresses, not a dedicated server IP for this site. After DNS resolves to GitHub Pages and domain ownership is verified, add `ohrisbitez.com` in repository **Settings → Pages → Custom domain**, enforce HTTPS, and add a root `CNAME` file to the published site. Then add the canonical URL and social URL metadata to `index.html`. Do not point a custom domain at Pages before registering and controlling it.
 
-- The eight bread listings, descriptions, and prices are examples. Confirm the products, ingredients, allergens, availability, and prices with the bakery.
-- Add the verified business email, physical address, opening hours, and social links in the visit section. The supplied phone contact is linked as a tap-to-call number; confirm its country code and formatting before launch.
-- The basket and checkout preview are not connected to order processing or payment. Connect a secure order backend, payment provider, fulfillment details, and order confirmation before accepting real orders. Do not put a personal bank/mobile-money account number or account-holder details in the public repository or site files; configure payment through a provider's secure checkout instead.
-- Suggested domain: `ohrisbitez.com`; availability and trademark status have not been checked. Register the desired domain, configure its DNS with the domain registrar/host, then add the verified canonical URL and custom-domain configuration.
-- A public server IP is assigned by the hosting provider. `203.0.113.42` is reserved for documentation and is not a live address.
-- Review the privacy, accessibility, consumer terms, tax, shipping, and food-allergen requirements that apply to the bakery's location.
+## Before accepting orders
 
-No domain registration, DNS record, hosting account, or public IP assignment is made by this project.
+- Menu illustrations and descriptions are original examples. Confirm actual products, ingredients, allergens, and availability with the bakery. Prices are intentionally omitted.
+- The contact phone is linked as a tap-to-call number. Confirm its country code and add the verified business email, physical address, opening hours, and social links.
+- The bag tracks requested items only; it does not submit orders or process payments. Connect a secure order flow and payment provider before taking online orders. Keep personal bank/mobile-money account details out of this public repository.
+- Review privacy, accessibility, consumer terms, tax, delivery, and food-allergen requirements for the bakery's location.

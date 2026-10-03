@@ -94,46 +94,59 @@ h1 em, h2 em { color: var(--orange); font-weight: 500; }
 .product-card[hidden] { display: none; }
 .product-art { aspect-ratio: 1.23; position: relative; overflow: hidden; display: grid; place-items: center; }
 .product-art svg { width: 90%; height: 90%; overflow: visible; }
+.product-art-sardine { background: #ddd9c9; }
+.product-art-coconut { background: #eadcc6; }
+.product-art-sesame { background: #e8d3bf; }
+.product-art-milk { background: #d9dfce; }
+.product-art-banana { background: #eadcae; }
+.product-art-oat { background: #ded7c8; }
+.product-art-butter { background: #e8d8c5; }
+.product-art-vegetable { background: #d8dfd0; }
+.product-art-wheat { background: #dfd1bd; }
 .product-art-sourdough { background: #ddd5c2; }
-.product-art-baguette { background: #d9dfce; }
-.product-art-seeded { background: #e8d3bf; }
-.product-art-ciabatta { background: #d8d9cc; }
-.product-art-focaccia { background: #ead9b9; }
-.product-art-rye { background: #ded2c8; }
-.product-art-challah { background: #e8d8c5; }
-.product-art-brioche { background: #d8dfd0; }
 .product-tag { position: absolute; z-index: 1; top: 15px; left: 15px; padding: 7px 8px; background: rgba(255,253,248,.78); font-size: 7px; letter-spacing: .11em; }
 .art-number { position: absolute; right: 14px; bottom: 11px; color: rgba(40,40,31,.47); font-family: var(--serif); font-size: 12px; }
 .product-shadow { fill: rgba(79,58,37,.15); }
-.product-loaf { fill: #c98445; stroke: #a96535; stroke-width: 3; }
-.product-score { fill: none; stroke: #f0c982; stroke-width: 9; stroke-linecap: round; }
-.baguette { fill: #c78b4f; stroke: #a66a39; stroke-width: 3; }
-.baguette-score { fill: none; stroke: #edc17e; stroke-width: 8; stroke-linecap: round; }
-.seeded-loaf { fill: #ae7547; stroke: #855434; stroke-width: 3; }
-.seed-mark { fill: none; stroke: #e4c78c; stroke-width: 5; stroke-linecap: round; }
-.ciabatta { fill: #c8975c; stroke: #a77945; stroke-width: 3; }
-.ciabatta-score { fill: none; stroke: #e4c187; stroke-width: 8; stroke-linecap: round; opacity: .8; }
-.focaccia { fill: #d7a259; stroke: #b37b3d; stroke-width: 3; }
-.focaccia-dimple { fill: none; stroke: #f0cb84; stroke-width: 5; stroke-linecap: round; }
-.rosemary { fill: none; stroke: #66734a; stroke-width: 4; stroke-linecap: round; }
-.rye-loaf { fill: #79523d; stroke: #583c30; stroke-width: 3; }
-.rye-score { fill: none; stroke: #bd9870; stroke-width: 8; stroke-linecap: round; }
-.challah-base { fill: #c98643; stroke: #a56735; stroke-width: 3; }
-.challah-braid { fill: none; stroke: #edbd6e; stroke-width: 14; stroke-linecap: round; }
-.brioche { fill: #d4944e; stroke: #ad6c36; stroke-width: 3; }
-.brioche-top { fill: #edbd70; stroke: #be8242; stroke-width: 3; }
-.brioche-shine { fill: none; stroke: #f2d294; stroke-width: 6; stroke-linecap: round; }
+.sardine-loaf { fill: #c98445; stroke: #a96535; stroke-width: 3; }
+.sardine-fish { fill: #65784f; stroke: #455b3e; stroke-width: 2; stroke-linejoin: round; }
+.sardine-eye { fill: #f3e6bd; }
+.sardine-shine { fill: none; stroke: #efc77c; stroke-width: 6; stroke-linecap: round; }
+.coconut-loaf { fill: #d99b55; stroke: #ad713c; stroke-width: 3; }
+.coconut-score { fill: none; stroke: #f0c982; stroke-width: 8; stroke-linecap: round; }
+.coconut-flake { fill: none; stroke: #fff5df; stroke-width: 5; stroke-linecap: round; }
+.sesame-loaf { fill: #bf8046; stroke: #996339; stroke-width: 3; }
+.sesame-seeds { fill: #f5e2b6; }
+.milk-loaf { fill: #d79a55; stroke: #ad713b; stroke-width: 3; }
+.milk-shine { fill: none; stroke: #efc982; stroke-width: 7; stroke-linecap: round; }
+.banana-loaf { fill: #b4773f; stroke: #89562e; stroke-width: 3; }
+.banana-top { fill: #edc26d; stroke: #c3944f; stroke-width: 2; }
+.banana-slice { fill: #f3dc91; stroke: #caa353; stroke-width: 2; }
+.banana-core { fill: none; stroke: #b38842; stroke-width: 2; stroke-linecap: round; }
+.oat-loaf { fill: #a97448; stroke: #805233; stroke-width: 3; }
+.oat-flakes { fill: #f3e4c2; }
+.butter-loaf { fill: #cc8848; stroke: #a26838; stroke-width: 3; }
+.butter-score { fill: none; stroke: #f0c982; stroke-width: 9; stroke-linecap: round; }
+.butter-shine { fill: none; stroke: #e8b36a; stroke-width: 6; stroke-linecap: round; }
+.vegetable-loaf { fill: #be8046; stroke: #93613a; stroke-width: 3; }
+.veg-tomato { fill: #d8674d; stroke: #a94d3c; stroke-width: 2; }
+.veg-pepper { fill: #d3ae4b; stroke: #a5843d; stroke-width: 2; }
+.veg-olive { fill: #64784e; stroke: #455b3e; stroke-width: 2; }
+.veg-leaf { fill: #7e8c57; }
+.wheat-loaf { fill: #a97448; stroke: #805233; stroke-width: 3; }
+.wheat-cut { fill: none; stroke: #e7bd7d; stroke-width: 8; stroke-linecap: round; }
+.wheat-seed { fill: none; stroke: #6d563d; stroke-width: 4; stroke-linecap: round; }
+.sourdough-loaf { fill: #c98445; stroke: #a96535; stroke-width: 3; }
+.sourdough-score { fill: none; stroke: #f0c982; stroke-width: 9; stroke-linecap: round; }
 .product-info { display: flex; align-items: start; justify-content: space-between; gap: 8px; padding: 16px 1px 12px; }
 .product-info h3 { margin-bottom: 5px; font-family: var(--serif); font-size: 18px; font-weight: 500; letter-spacing: -.02em; }
 .product-info p { max-width: 230px; margin-bottom: 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
-.price { padding-top: 3px; color: var(--orange); font-size: 13px; font-weight: 700; }
 .product-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: -18px 0 26px; }
 .filter-button { min-height: 34px; padding: 0 13px; border: 1px solid #cfcabc; border-radius: 99px; background: transparent; color: var(--muted); cursor: pointer; font-size: 9px; transition: color .2s ease, background .2s ease, border-color .2s ease; }
 .filter-button:hover, .filter-button.is-active { border-color: var(--ink); background: var(--ink); color: var(--paper); }
 .add-button { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 11px 1px 4px; border: 0; background: transparent; text-align: left; cursor: pointer; font-size: 10px; font-weight: 600; }
 .add-button span { color: var(--orange); font-size: 18px; font-weight: 400; transition: transform .2s ease; }
 .add-button:hover span { transform: rotate(90deg); }
-.price-note { margin: 23px 0 0; color: var(--muted); font-size: 9px; }
+.menu-note { margin: 23px 0 0; color: var(--muted); font-size: 9px; }
 
 .visit { min-height: 450px; padding-top: 75px; padding-bottom: 75px; display: grid; grid-template-columns: .86fr 1.14fr; gap: 10%; align-items: center; }
 .visit-art { min-height: 290px; position: relative; overflow: hidden; display: grid; place-items: center; background: #d2d9c0; }
@@ -175,7 +188,7 @@ h1 em, h2 em { color: var(--orange); font-weight: 500; }
 .cart-total { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 12px; }
 .cart-total strong { font-size: 15px; }
 .checkout-button { width: 100%; justify-content: space-between; }
-.checkout-button:disabled { opacity: .45; cursor: not-allowed; }
+.checkout-button[aria-disabled="true"] { opacity: .45; cursor: not-allowed; pointer-events: none; }
 .checkout-note { margin: 12px 0 0; color: var(--muted); font-size: 9px; line-height: 1.6; }
 .checkout-form { display: grid; gap: 8px; margin-top: 18px; }
 .checkout-form label { margin-top: 6px; font-size: 10px; font-weight: 600; }
